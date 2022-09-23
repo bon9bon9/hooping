@@ -1,59 +1,61 @@
-.imageselect {
+.image-select {
   padding-left: 28%;
 }
 
-.imageselectbox {
+.image-select-box {
   width: 150px;
   height: 30px;
   border: 1px solid rgb(201, 201, 201);
   border-radius: 5px;
 }
 
-.buybtn{
+.buy-btn{
   border: 1px solid rgb(201, 201, 201);
   border-radius: 5px;
 }
 
-#sizeselectbox{
+.size-select-box-1{
   border: 1px solid rgb(201, 201, 201);
   border-radius: 5px;
 }
-
-.buytext {
+.size-select-box-2{
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+.buy-text {
   float: left;
 }
-
-.pricetext {
+.price-text {
   margin-left: 50px;
 }
-
 .pb-5 {
   padding-left: 180px;
 }
-
 .btn-primary {
   color: #fefeff;
   background-color: #ff3826;
   border-color: #ff3826;
 }
-
 .btn-primary:hover {
   color: #fff;
   background-color: #f73a25;
 }
-
-#sizeselectbox {
+#size-select-box-1 {
   width: 220px;
   height: 30px;
   border: 1px solid rgb(201, 201, 201);
   border-radius: none;
 }
-
+#size-select-box-2 {
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: none;
+}
 .nav-item-1 {
   width: 200px;
 }
-
-.lobimg {
+.lob-img {
   margin-left: 100px;
 }
 .if-btn {
@@ -93,13 +95,13 @@
 
   justify-content: space-evenly;
 }
-.fbox{
+.frist-box{
   width: 800px;
   height: 410px;
   display: flex;
   justify-content: space-evenly;
 }
-.bestbox{
+.best-box{
   margin-top: 50px;
   width: 400px;
   height: 400px;
@@ -114,7 +116,7 @@
   width: 160px;
   height: 160px;
 }
-.sbox{
+.second-box{
   width: 800;
   height: 410px;
   display: flex;
@@ -136,7 +138,7 @@
   height: 160px;
   margin-right: 8px;
 }
-.bestimg{
+.best-img{
   width: 90%;
   height: 90%;
   border: 1px solid black;
