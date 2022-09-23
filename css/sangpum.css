@@ -1,0 +1,143 @@
+.imageselect {
+  padding-left: 28%;
+}
+
+.imageselectbox {
+  width: 150px;
+  height: 30px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+.buybtn{
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+#sizeselectbox{
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+.buytext {
+  float: left;
+}
+
+.pricetext {
+  margin-left: 50px;
+}
+
+.pb-5 {
+  padding-left: 180px;
+}
+
+.btn-primary {
+  color: #fefeff;
+  background-color: #ff3826;
+  border-color: #ff3826;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #f73a25;
+}
+
+#sizeselectbox {
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: none;
+}
+
+.nav-item-1 {
+  width: 200px;
+}
+
+.lobimg {
+  margin-left: 100px;
+}
+.if-btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  color: #000;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.if-item {
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(228, 228, 228);
+}
+.opener {
+  display: none;
+}
+.opener:checked~.if-item {
+  display: block;
+}
+.if{
+  margin-left: 580px;
+  display: inline-block;
+}
+.if-1{
+  margin-left: 100px;
+}
+.review{
+
+  width: 810px;
+  height: 810px;
+  margin: auto;
+
+  justify-content: space-evenly;
+}
+.fbox{
+  width: 800px;
+  height: 410px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bestbox{
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+}
+.review-1{
+  margin-top: 50px;
+  width: 160px;
+  height: 160px;
+}
+.review-2{
+  margin-top:80px;
+  width: 160px;
+  height: 160px;
+}
+.sbox{
+  width: 800;
+  height: 410px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.review-3{
+  margin-top:80px;
+  width: 160px;
+  height: 160px;
+}
+.review-4{
+  margin-top:80px;
+  width: 160px;
+  height: 160px;
+}
+.review-5{
+  margin-top:80px;
+  width: 160px;
+  height: 160px;
+  margin-right: 8px;
+}
+.bestimg{
+  width: 90%;
+  height: 90%;
+  border: 1px solid black;
+}
