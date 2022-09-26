@@ -9576,9 +9576,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* footer 후핑*/
 .footer{
-  margin-left: 10%;
-  width: 80%;
-  margin-bottom: 50px;
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .snsurl{
   float: right;
