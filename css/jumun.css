@@ -8,19 +8,20 @@
 .container{
     width: 100%;
 }
-.leftcontainer{
+.left-container{
     margin-left: 20%;
     width: 600px;
     display: inline-block;
 }
-.rightontainer{
+.right-container{
     background-color: rgb(243, 243, 243);
     right:  30px;
-    width: 22%;
+    width: 24%;
+    top: 210px;
     position: fixed;
     display: inline-block;
 }
-.pricetext{
+.price-text{
     text-align: center;
 }
 .p-1{
@@ -64,7 +65,7 @@
     margin-left: 7%;
     height: 20px;
 }
-.nametext{
+.name-text{
     border-radius: none;
 }
 .pis{
@@ -73,7 +74,7 @@
     margin-left: 40px;
     display: inline-block;
 }
-.pis-2{
+.pis-1{
     margin-left: 50px;
     display: inline-block;
 }
@@ -88,13 +89,13 @@
     outline: 0;
     color: #333;
 }
-.username{
+.user-name{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 40px;
     display: inline-block;
 }
-.username-1{
+.user-name-1{
     margin-left: 55px;
     display: inline-block;
 }
@@ -183,7 +184,7 @@
     display: inline-block;
     margin-left: 60px;
 }
-.saletext{
+.sale-text{
     margin-top: 40px;
 }
 .sale-1{
@@ -212,14 +213,14 @@
     margin-left: 40px;
     display: inline-block;
 }
-.paytext{
+.pay-text{
     display: inline-block;
     margin-top: 40px;
 }
-.paysel{
+.pay-sel{
     display: inline-block;
 }
-.paysel-1{
+.pay-sel-1{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 40px;
@@ -237,11 +238,11 @@
     margin-left: 40px;
     display: inline-block;
 }
-.cardbuy{
+.card-buy{
     margin-left: 60px;
     display: inline-block;
 }
-.cardbuy-1{
+.card-buy-1{
     margin-left: 10px;
     display: inline-block;
 }
