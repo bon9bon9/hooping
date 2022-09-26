@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .text{
     text-align: center;
+    font-family: 'establishRoomNo703OTF';
+    margin-top: 25px;
 }
 .st-1{
     margin-right: 20%;
