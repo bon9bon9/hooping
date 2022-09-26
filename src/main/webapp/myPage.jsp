@@ -1,0 +1,184 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Favicon -->
+     <link href="resources/img/favicon.ico" rel="icon">
+
+     <!-- Google Web Fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+ 
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+     <!-- Libraries Stylesheet -->
+     <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ 
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="resources/css/style.css" rel="stylesheet">
+     <link href="resources/css/myPage.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            
+          $("#header").load("header.jsp");
+
+          $("#footer").load("footer.jsp");
+         
+        });
+        </script>
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <header>
+        <div id="header">
+
+        </div>
+    </header> 
+
+<div class="container">
+    <div class="row">
+       
+        <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">마이페이지</span></h2>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <!-- end row -->
+    <section class="mypage">
+        <div class="mypage-topline"></div>
+        <div class="mypage-top">
+            <img src="resources/img/kakaoLogo.png" class="mypage-logo"/>  
+            <div class="mypage-top-menu">
+               
+                <div class="mypage-basic">
+                    <div class="mypage-hello">
+                        <span>***님 안녕하세요</span>
+                        <div class="mypage-edit-btns">
+                            <a href="serviceGrade.jsp"><button>회원혜택보기</button></a>
+                            <a href="profile.jsp"><button>프로필 수정</button></a>
+                        </div>
+                    </div>
+                    <span>현재 등급 : 뉴비</span>
+                    <span></span>
+                    <p style="margin: 0px">
+                        멤버까지 남은 경험치는 20점입니다
+                    </p>
+                </div>
+            </div>
+            <div class="mypage-top-vertical"></div>
+            <div class="mypage-coupon-count">
+                <span>쿠폰</span>
+                <h2>12개</h2>
+            </div>
+            <div class="mypage-top-vertical"></div>
+            <div class="mypage-point-count">
+                <span>포인트</span>
+                <h2>0P</h2>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <div class="mypage-recent-div">
+        <h4>최근 주문내역</h2>
+            <div class="table-responsive project-list">
+                <table class="table project-table table-centered table-nowrap">
+                    <thead>
+                        <tr>
+                            <th scope="col">주문일</th>
+                            <th scope="col">주문번호</th>
+                            <th scope="col">상품정보</th>
+                            <th scope="col">수량</th>
+                            <th scope="col">상품금액</th>
+                            <th scope="col">진행상황</th>
+                            <th scope="col">상품평</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2022-09-21</th>
+                            <td>2343</td>
+                            <td class="mypage-order-product-td">
+                                <div>
+                                    <img src="resources/img/cat-1.jpg" style="width:100px"/>
+                                </div>
+                                <div class="mypage-order-product-detail">
+                                    <span>네어 모직 슬림일자 슬랙스</span>
+                                    <span class="mypage-order-product-option">블랙/기본/S</span>
+                                </div>
+                            </td>
+                            <td>
+                               2
+                            </td>
+                            <td>
+                                <div class="user-id">
+                                   <span>kim1234</span>
+                                </div>
+                            </td>
+                            <td>
+                                배송중
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="mypage-recent-btns">
+                    <a href="writeReview.jsp"><button>리뷰 작성하기</button></a>
+                    <button class="mypage-refund-btn">환불하기</button>
+                </div>
+           
+            </div> <!-- recent div end -->
+    </div>
+
+    <div class="mypage-review-div">
+        <h4>My Review</h4>
+        <div class="table-responsive project-list">
+            <table class="table project-table table-centered table-nowrap">
+                <thead>
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">상품</th>
+                        <th scope="col">날짜</th>
+                        <th scope="col">댓글</th>
+                        <th scope="col">좋아요</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">가을 느낌 물씬 아우터</th>
+                        <td>***코트</td>
+                        <td>2022-09-10</td>
+                        <td>2개</td>
+                        <td>10개</td>   
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div> <!-- recent div end -->
+       
+    </div>
+
+   
+</div>
+
+<div id="footer">
+
+</div> 
+
+</body>
+</html>
