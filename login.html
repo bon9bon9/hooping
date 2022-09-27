@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script>
-        $(function(){
-            
-          $("#header").load("header.html");
-
-          $("#footer").load("footer.html");
-         
-        });
-    </script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
      <!-- Favicon -->
      <link href="img/favicon.ico" rel="icon">
 
@@ -39,15 +21,29 @@
      <!-- Customized Bootstrap Stylesheet -->
      <link href="css/style.css" rel="stylesheet">
      <link href="css/jyp.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+         $(function(){
+             
+           $("#a").load("header.html");
+ 
+           $("#b").load("footer.html");
+          
+         });
+    </script>
  
     <title>Document</title>
 
 </head>
 <body>
-    <div id="header">
-
-    </div>
     
+    <header>
+        <div id="a">
+
+        </div>
+    </header>
     <section class="login-section">
 
         <div class="login-logo">
@@ -99,10 +95,9 @@
         </div>
 
     </section>
-    <div id="footer">
-        
-    </div>
-    
+    <div id="b">
+
+    </div> 
     
 </body>
 </html>
