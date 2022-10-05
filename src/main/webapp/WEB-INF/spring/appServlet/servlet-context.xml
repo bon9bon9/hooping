@@ -29,8 +29,10 @@
 	<context:component-scan
 		base-package="com.hoo.ping" />
 
-	<resources mapping="/css/**" location="/resources/css/" />
-	<resources mapping="/js/**" location="/resources/js/" />
-	<resources mapping="/img/**" location="/resources/img/" />
+<!-- 	<resources mapping="resources/css/**" location="/resources/css/" /> -->
+<!-- 	<resources mapping="resources/js/**" location="/resources/js/" /> -->
+<!-- 	<resources mapping="resources/img/**" location="/resources/img/" /> -->
+<!-- 	<resources mapping="resources/lib/**" location="/resources/lib/" /> -->
+<!-- 	<resources mapping="resources/mail/**" location="/resources/mail/" /> -->
 
 </beans:beans>

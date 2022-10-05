@@ -23,7 +23,7 @@ public interface ReviewService {
 	
 	ReviewVO getBestReview();
 	
-	void insertBestYN(ReviewVO vo);
+	void updateBestYN(ReviewVO vo);
 	
 	List <ReviewVO> getReviewListWithBest(ReviewVO vo);
 	

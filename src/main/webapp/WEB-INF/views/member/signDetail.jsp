@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- Favicon -->
-     <link href="../../../resources/img/favicon.ico" rel="icon">
+     <link href="resources/img/favicon.ico" rel="icon">
 
      <!-- Google Web Fonts -->
      <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,11 +19,11 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
  
      <!-- Libraries Stylesheet -->
-     <link href="../../../resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
  
      <!-- Customized Bootstrap Stylesheet -->
-     <link href="../../..//resources/css/style.css" rel="stylesheet">
-     <link href="../../../resources/css/signUp.css" rel="stylesheet">
+     <link href="resources/css/style.css" rel="stylesheet">
+     <link href="resources/css/signUp.css" rel="stylesheet">
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

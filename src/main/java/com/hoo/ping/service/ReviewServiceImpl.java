@@ -52,8 +52,8 @@ public class ReviewServiceImpl implements ReviewService{
 	}
 
 	@Override
-	public void insertBestYN(ReviewVO vo) {
-		reviewDAO.insertBestYN(vo);
+	public void updateBestYN(ReviewVO vo) {
+		reviewDAO.updateBestYN(vo);
 	}
 
 	@Override

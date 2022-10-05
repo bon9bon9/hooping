@@ -23,7 +23,7 @@ public interface ReviewDAO {
 
 	public ReviewVO getBestReview();
 
-	public void insertBestYN(ReviewVO vo);
+	public void updateBestYN(ReviewVO vo);
 
 	public List<ReviewVO> getReviewListWithBest(ReviewVO vo);
 

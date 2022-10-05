@@ -51,7 +51,7 @@ public class ReviewDAOImpl implements ReviewDAO {
 	}
 
 	@Override
-	public void insertBestYN(ReviewVO vo) {
+	public void updateBestYN(ReviewVO vo) {
 		mybatis.insert("reviewDAO.insertBestYN");
 	}
 

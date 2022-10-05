@@ -19,11 +19,11 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 <!-- Customized Bootstrap Stylesheet -->
-<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>"/>
-<link href="../../../resources/css/signUp.css" rel="stylesheet">
+<link href="/ping/resources/css/style.css" rel="stylesheet"/>
+<link href="/ping/resources/css/signUp.css" rel="stylesheet"/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

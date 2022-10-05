@@ -61,16 +61,19 @@ public class ReviewController {
 		reviewService.insertReview(vo);
 
 		/*
-		 * SQL문 INSERT INTO review ( REVIEWID, REVIEWTOTAL, REVIEWQUALITY, REVIEWTEXT
+		 * SQL문 INSERT INTO review ( REVIEWID, REVIEWTOTAL, REVIEWQUALITY, 
+		 * 							REVIEWTITLE, REVIEWTEXT, REVIEWDATE
 		 * <if test="REVIEWHEIGHT != null">,REVIEWHEIGHT</if> <if
 		 * test="REVIEWWEIGHT != null">,REVIEWWEIGHT</if> <if
 		 * test="REVIEWIMG != null">,REVIEWIMG</if> , REVIEWTHUMBS, REVIEWBESTYN,
 		 * ORDERID, PRODUCTID)
 		 * 
-		 * VALUES ( #{reviewID}, #{reviewTotal}, #{reviewQuality}, #{reviewText} <if
-		 * test="REVIEWHEIGHT != null">,#{reviewHeight}</if> <if
-		 * test="REVIEWWEIGHT != null">,#{reviewWeight}</if> <if
-		 * test="REVIEWIMG != null">,#{reviewImg}</if> , 0, N, #{orderId}, #{productId})
+		 * VALUES ( review_seq.nextval, #{reviewTotal}, #{reviewQuality}, 
+		 * 			#{reviewTitle}, #{reviewText}, SYSDATE
+		 * <if test="REVIEWHEIGHT != null">,#{reviewHeight}</if>
+		 * <if test="REVIEWWEIGHT != null">,#{reviewWeight}</if>
+		 * <if test="REVIEWIMG != null">,#{reviewImg}</if>
+		 *  , 0, N, #{orderId}, #{productId})
 		 * 
 		 * model.addAttribute("productNum", vo.getProductId);
 		 */
@@ -119,7 +122,7 @@ public class ReviewController {
 				// 멤버 등급 포인트 올리는 메소드
 				// memberService.updateRating(vo);
 				// 베스트 리뷰 체크 메소드
-				reviewService.insertBestYN(vo);
+				reviewService.updateBestYN(vo);
 				/*
 				 * SQL 
 				 * UPDATE review 
