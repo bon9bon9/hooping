@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- Favicon -->
-     <link href="resources/img/favicon.ico" rel="icon">
+     <link href="/ping/resources/img/favicon.ico" rel="icon">
 
      <!-- Google Web Fonts -->
      <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,32 +19,18 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
  
      <!-- Libraries Stylesheet -->
-     <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
  
      <!-- Customized Bootstrap Stylesheet -->
-     <link href="resources/css/style.css" rel="stylesheet">
-     <link href="resources/css/myPage.css" rel="stylesheet">
+     <link href="/ping/resources/css/style.css" rel="stylesheet">
+     <link href="/ping/resources/css/myPage.css" rel="stylesheet">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-        $(function(){
-            
-          $("#header").load("header.jsp");
-
-          $("#footer").load("footer.jsp");
-         
-        });
-        </script>
     <title>Document</title>
     
 
 </head>
 <body>
-    <header>
-        <div id="header">
-
-        </div>
-    </header> 
 
 <div class="container">
     <div class="row">
@@ -61,15 +48,15 @@
     <section class="mypage">
         <div class="mypage-topline"></div>
         <div class="mypage-top">
-            <img src="resources/img/kakaoLogo.png" class="mypage-logo"/>  
+            <img src="/ping/resources/img/kakaoLogo.png" class="mypage-logo"/>  
             <div class="mypage-top-menu">
                
                 <div class="mypage-basic">
                     <div class="mypage-hello">
                         <span>***님 안녕하세요</span>
                         <div class="mypage-edit-btns">
-                            <a href="serviceGrade.jsp"><button>회원혜택보기</button></a>
-                            <a href="profile.jsp"><button>프로필 수정</button></a>
+                            <a href="/ping/board/getGradeList.do"><button>회원혜택보기</button></a>
+                            <a href="/ping/member/profile.do"><button>프로필 수정</button></a>
                         </div>
                     </div>
                     <span>현재 등급 : 뉴비</span>
@@ -115,7 +102,7 @@
                             <td>2343</td>
                             <td class="mypage-order-product-td">
                                 <div>
-                                    <img src="resources/img/cat-1.jpg" style="width:100px"/>
+                                    <img src="/ping/resources/img/cat-1.jpg" style="width:100px"/>
                                 </div>
                                 <div class="mypage-order-product-detail">
                                     <span>네어 모직 슬림일자 슬랙스</span>
@@ -138,7 +125,7 @@
                     </tbody>
                 </table>
                 <div class="mypage-recent-btns">
-                    <a href="writeReview.jsp"><button>리뷰 작성하기</button></a>
+                    <a href="/ping/myPage/writeReview.do"><button>리뷰 작성하기</button></a>
                     <button class="mypage-refund-btn">환불하기</button>
                 </div>
            
@@ -176,9 +163,6 @@
    
 </div>
 
-<div id="footer">
-
-</div> 
-
 </body>
+<%@include file="../main/footer.jsp"%>
 </html>

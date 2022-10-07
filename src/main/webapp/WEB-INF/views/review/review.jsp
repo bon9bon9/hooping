@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,13 +19,13 @@
 	<!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/lib/easing/easing.min.js"></script>
-    <script src="resources/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/ping/resources/lib/easing/easing.min.js"></script>
+    <script src="/ping/resources/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="resources/mail/jqBootstrapValidation.min.js"></script>
-    <script src="resources/mail/contact.js"></script>
-	<script src="resources/js/main.js"></script>
+    <script src="/ping/resources/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/ping/resources/mail/contact.js"></script>
+	<script src="/ping/resources/js/main.js"></script>
 	<script>
         $(function(){
             
@@ -34,7 +35,7 @@
     </script>
 
     <!-- Favicon -->
-    <link href="resources/img/favicon.ico" rel="icon">
+    <link href="/ping/resources/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,9 +48,9 @@
     <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="resources/css/style.css" rel="stylesheet">
-    <link href="resources/css/review.css" rel="stylesheet">
-	<link href="resources/css/header.css" rel="stylesheet">
+    <link href="/ping/resources/css/style.css" rel="stylesheet">
+    <link href="/ping/resources/css/review.css" rel="stylesheet">
+	<link href="/ping/resources/css/header.css" rel="stylesheet">
 </head>
 </head>
 
@@ -67,8 +68,8 @@
 		<div class="px-xl-5 reviewBox">
 			<div class="bestReview">
 				<div class="imgMix" style="position:relative">
-					<img src="resources/img/reviewEx.jpg" alt="">
-					<img src="resources/img/1등.png" alt="" style="position:absolute; width:20%; right:20%; top:-7%;">
+					<img src="/ping/resources/img/reviewEx.jpg" alt="">
+					<img src="/ping/resources/img/1등.png" alt="" style="position:absolute; width:20%; right:20%; top:-7%;">
 				</div>
 				<div class="reviewId" style="width:40%; margin:auto;">
 					<span>***</span><span>님의 리뷰</span>
@@ -78,7 +79,7 @@
 			<div class="reviewList">
 				<div class="oneReview">
 					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
+						<img src="/ping/resources/img/reviewEx.jpg" alt="">
 					</div>
 					<div class="reviewId">
 						<span>***</span><span>님의 리뷰</span>
@@ -86,7 +87,7 @@
 				</div>
 				<div class="oneReview">
 					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
+						<img src="/ping/resources/img/reviewEx.jpg" alt="">
 					</div>
 					<div class="reviewId">
 						<span>***</span><span>님의 리뷰</span>
@@ -94,44 +95,13 @@
 				</div>
 				<div class="oneReview">
 					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
+						<img src="/ping/resources/img/reviewEx.jpg" alt="">
 					</div>
 					<div class="reviewId">
 						<span>***</span><span>님의 리뷰</span>
 					</div>
 				</div>
-				<div class="oneReview">
-					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
-					</div>
-					<div class="reviewId">
-						<span>***</span><span>님의 리뷰</span>
-					</div>
-				</div>
-				<div class="oneReview">
-					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
-					</div>
-					<div class="reviewId">
-						<span>***</span><span>님의 리뷰</span>
-					</div>
-				</div>
-				<div class="oneReview">
-					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
-					</div>
-					<div class="reviewId">
-						<span>***</span><span>님의 리뷰</span>
-					</div>
-				</div>
-				<div class="oneReview">
-					<div class="reviewImg">
-						<img src="resources/img/reviewEx.jpg" alt="">
-					</div>
-					<div class="reviewId">
-						<span>***</span><span>님의 리뷰</span>
-					</div>
-				</div>
+				
 
 			</div>
 		</div>
@@ -142,7 +112,7 @@
 	<div class="fullScreen dontshow">
 		<div class="reviewDetail area">
 			<div class="reviewDetailImg">
-				<img src="resources/img/reviewEx.jpg" alt="">
+				<img src="/ping/resources/img/reviewEx.jpg" alt="">
 			</div>
 			<div class="rightReviewDetailBox" >
 				
@@ -228,4 +198,5 @@
 
 	</div>
 </body>
+<%@include file="../main/footer.jsp"%>
 </html>

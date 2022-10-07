@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@include file="../main/header.jsp"%>    
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>EShopper - Bootstrap Shop Template</title>
@@ -17,23 +17,16 @@
 	<!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/lib/easing/easing.min.js"></script>
-    <script src="resources/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/ping/resources/lib/easing/easing.min.js"></script>
+    <script src="/ping/resources/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="resources/mail/jqBootstrapValidation.min.js"></script>
-    <script src="resources/mail/contact.js"></script>
-	<script src="resources/js/main.js"></script>
-	<script>
-        $(function(){
-            
-          $("#header").load("header.jsp");
-          $("#footer").load("footer.jsp");
-        });
-    </script>
+    <script src="/ping/resources/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/ping/resources/mail/contact.js"></script>
+	<script src="/ping/resources/js/main.js"></script>
 
     <!-- Favicon -->
-    <link href="resources/img/favicon.ico" rel="icon">
+    <link href="/ping/resources/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,26 +36,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="resources/css/style.css" rel="stylesheet">
-    <link href="resources/css/writeReview.css" rel="stylesheet">
+    <link href="/ping/resources/css/style.css" rel="stylesheet">
+    <link href="/ping/resources/css/writeReview.css" rel="stylesheet">
 </head>
 </head>
 
 <body>
-    <div id="header">
-
-	</div>
 
 	<!-- writeReview Body -->
 	<div class="reviewForm px-xl-5 my-5">
 		<div class="uploadReviewImg">
-			<img src="resources/img/reviewEx.jpg" alt="">
+			<img src="/ping/resources/img/reviewEx.jpg" alt="">
 		</div>
 		<div class="rightReviewInputBox" >
-			<form>
+			<form action="/ping/review/saveReview.do" method="post">
 				<div class="reviewFormWrite">
 					<div class="buyInfo">
 						<div>구매한 상품 정보</div>
@@ -110,20 +100,12 @@
 						<textarea style="width:100%"name="" id="" rows="5"></textarea>
 					</div>
 					<div class="reviewSubmit">
-						
 						<input class="btn-primary" type="submit" value="제출하기">
-						
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
-	<!-- Footer Start -->
-    <div id="footer">
-
-	</div>
-    <!-- Footer End -->
-	
 
     <!-- Template Javascript -->
 	<script>
@@ -132,4 +114,5 @@
 		});
 	</script>
 </body>
+<%@include file="../main/footer.jsp"%>
 </html>

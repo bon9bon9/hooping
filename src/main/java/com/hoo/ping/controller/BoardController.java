@@ -12,12 +12,13 @@ import com.hoo.ping.domain.BoardVO;
 import com.hoo.ping.service.BoardService;
 
 @Controller
+@RequestMapping("/board/")
 public class BoardController {
 	
 	private BoardService boardService;
 	
 	@Autowired
-	BoardController(BoardService boardService){
+	public BoardController(BoardService boardService){
 		this.boardService = boardService;
 	}
 	
@@ -25,16 +26,17 @@ public class BoardController {
 	@RequestMapping("getBoardList.do")
 	public String getBoardList (Model model) {
 		
-		List <BoardVO> bList = boardService.getBoardList();
-		/*
-		 * SQL
-		 * SELECT * 
-		 * 	 FROM board
-		 *  ORDER BY boardId DESC
-		 */
-		model.addAttribute("bList", bList);
+		System.out.println("=== getBoardList ===");
+//		List <BoardVO> bList = boardService.getBoardList();
+//		/*
+//		 * SQL
+//		 * SELECT * 
+//		 * 	 FROM board
+//		 *  ORDER BY boardId DESC
+//		 */
+//		model.addAttribute("bList", bList);
 		
-		return "serviceBoard";
+		return "/board/boardList";
 	}
 	
 	// 특정 문의글을 클릭했을 때
@@ -68,14 +70,21 @@ public class BoardController {
 			model.addAttribute("bComment", bcvo);
 		}
 		
-		return "serviceArticle";
+		return "/board/board";
+	}
+	
+	@RequestMapping("writeBoard.do")
+	public String writeBoard() {
+		
+		return "/board/boardWrite";
 	}
 	
 	// 문의글 저장
 	@RequestMapping("saveBoard.do")
 	public String saveBoard (BoardVO vo) {
 		
-		boardService.insertBoard();
+		System.out.println("=== saveBoard ===");
+//		boardService.insertBoard();
 		/*
 		 * SQL
 		 * INSERT INTO board ( BOARDID, BOARDTITLE, BOARDCONTENT, 
@@ -84,7 +93,7 @@ public class BoardController {
 		 * 		   SYSDATE, N, #{memberId})
 		 */
 		
-		return "redirect:/getBoardList";
+		return "redirect:/board/getBoardList.do";
 	}
 	
 	// 댓글 저장
@@ -164,6 +173,12 @@ public class BoardController {
 		 *  WHERE bCommentId = #{bCommentId}
 		 */
 		return "redirect:/getBoardList";
+	}
+	
+	@RequestMapping("getGradeList.do")
+	public String getGradeList() {
+		System.out.println("=== grade ===");
+		return "board/grade";
 	}
 	
 }

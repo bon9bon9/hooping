@@ -18,7 +18,7 @@ public class ReviewController {
 	private ReviewService reviewService;
 	
 	@Autowired
-	ReviewController(ReviewService reviewService) {
+	public ReviewController(ReviewService reviewService) {
 		this.reviewService = reviewService;
 	}
 	
@@ -51,14 +51,14 @@ public class ReviewController {
 	
 	
 	// 리뷰를 DB에 저장
-	@RequestMapping("saveReview")
-	public String saveReview(ReviewVO vo, Model model) {
+	@RequestMapping("saveReview.do")
+	public String saveReview() { // 파라미터 ReviewVO vo, Model model
 
 		/*
 		 * 마이 페이지에서 productId, orderId를 리뷰 작성 페이지로 넘긴 후 파라미터를 넘길 때 hidden으로 함깨 넘긴다
 		 */
 
-		reviewService.insertReview(vo);
+//		reviewService.insertReview(vo);
 
 		/*
 		 * SQL문 INSERT INTO review ( REVIEWID, REVIEWTOTAL, REVIEWQUALITY, 
@@ -78,7 +78,7 @@ public class ReviewController {
 		 * model.addAttribute("productNum", vo.getProductId);
 		 */
 
-		return "product";
+		return "member/myPage";
 	}
 	
 	// 리뷰 댓글을 저장
@@ -101,64 +101,65 @@ public class ReviewController {
 	@RequestMapping("reviewList.do")
 	public String reviewList(Model model) {
 
-		ReviewVO vo = reviewService.getBestReview();
-		/*
-		 * 좋아요 수가 가장 많은 리뷰 선택
-		 * 
-		 * SQL 
-		 * SELECT * 
-		 * 	 FROM review
-		 *  WHERE reviewThumbs = (SELECT MAX(reviewThumbs) 
-		 *  						FROM review
-		 * 
-		 */
+		System.out.println("=== reviewList ===");
+//		ReviewVO vo = reviewService.getBestReview();
+//		/*
+//		 * 좋아요 수가 가장 많은 리뷰 선택
+//		 * 
+//		 * SQL 
+//		 * SELECT * 
+//		 * 	 FROM review
+//		 *  WHERE reviewThumbs = (SELECT MAX(reviewThumbs) 
+//		 *  						FROM review
+//		 * 
+//		 */
+//
+//		// 베스트 리뷰의 좋아요 개수가 10개보다 많다면
+//		if (vo.getReviewThumbs() >= 10) {
+//
+//			// 해당 리뷰의 베스트 리뷰 선정 여부를 확인
+//			// 베스트 리뷰에 선정된 적이 없다면
+//			if (vo.getReviewBestYN() == 0) {
+//				// 멤버 등급 포인트 올리는 메소드
+//				// memberService.updateRating(vo);
+//				// 베스트 리뷰 체크 메소드
+//				reviewService.updateBestYN(vo);
+//				/*
+//				 * SQL 
+//				 * UPDATE review 
+//				 * 	  SET reviewBestYN = 1 
+//				 *  WHERE reviewId = #{reviewId}
+//				 * 
+//				 */
+//			} //
+//			model.addAttribute("bestReview", vo);
+//			
+//			// 베스트 리뷰를 제외한 리뷰 리스트
+//			List<ReviewVO> rList = reviewService.getReviewListWithBest(vo);
+//			/*
+//			 * SQL
+//			 * SELECT * 
+//			 * 	 FROM review
+//			 *  WHERE NOT(reviewId = #{reviewId})
+//			 */
+//		} 
+//		
+//		List<ReviewVO> rList = reviewService.getReviewList();
+//
+//		// 리뷰 리스트를 추가
+//
+//		/*
+//		 * SQL 
+//		 * SELECT * 
+//		 * 	 FROM review 
+//		 *  ORDER BY reviewThumbs DESC
+//		 */
+//
+//		// 모델에 리뷰 리스트를 추가
+//
+//		model.addAttribute("rList", rList);
 
-		// 베스트 리뷰의 좋아요 개수가 10개보다 많다면
-		if (vo.getReviewThumbs() >= 10) {
-
-			// 해당 리뷰의 베스트 리뷰 선정 여부를 확인
-			// 베스트 리뷰에 선정된 적이 없다면
-			if (vo.getReviewBestYN() == 'N') {
-				// 멤버 등급 포인트 올리는 메소드
-				// memberService.updateRating(vo);
-				// 베스트 리뷰 체크 메소드
-				reviewService.updateBestYN(vo);
-				/*
-				 * SQL 
-				 * UPDATE review 
-				 * 	  SET reviewBestYN = Y 
-				 *  WHERE reviewId = #{reviewId}
-				 * 
-				 */
-			} //
-			model.addAttribute("bestReview", vo);
-			
-			// 베스트 리뷰를 제외한 리뷰 리스트
-			List<ReviewVO> rList = reviewService.getReviewListWithBest(vo);
-			/*
-			 * SQL
-			 * SELECT * 
-			 * 	 FROM review
-			 *  WHERE NOT(reviewId = #{reviewId})
-			 */
-		} 
-		
-		List<ReviewVO> rList = reviewService.getReviewList();
-
-		// 리뷰 리스트를 추가
-
-		/*
-		 * SQL 
-		 * SELECT * 
-		 * 	 FROM review 
-		 *  ORDER BY reviewThumbs DESC
-		 */
-
-		// 모델에 리뷰 리스트를 추가
-
-		model.addAttribute("rList", rList);
-
-		return "review";
+		return "/review/review";
 	}
 
 }

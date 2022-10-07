@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@include file="../main/header.jsp"%>    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/ping/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,36 +23,27 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="resources/css/style.css" rel="stylesheet">
-    <link href="resources/css/product.css" rel="stylesheet">
+    <link href="/ping/resources/css/style.css" rel="stylesheet">
+    <link href="/ping/resources/css/product.css" rel="stylesheet">
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/lib/easing/easing.min.js"></script>
-    <script src="resources/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/ping/resources/lib/easing/easing.min.js"></script>
+    <script src="/ping/resources/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="resources/mail/jqBootstrapValidation.min.js"></script>
-    <script src="resources/mail/contact.js"></script>
+    <script src="/ping/resources/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/ping/resources/mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="resources/js/main.js"></script>
+    <script src="/ping/resources/js/main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-        $(function () {
-
-            $("#header").load("header.jsp");
-
-            $("#footer").load("footer.jsp");
-
-        });
-    </script>
 </head>
 
 <body>
@@ -72,16 +64,16 @@
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner border">
                         <div class="carousel-item active">
-                            <img class="w-100 h-100" src="resources/img/product-1.jpg" alt="Image">
+                            <img class="w-100 h-100" src="/ping/resources/img/product-1.jpg" alt="Image">
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100 h-100" src="resources/img/product-2.jpg" alt="Image">
+                            <img class="w-100 h-100" src="/ping/resources/img/product-2.jpg" alt="Image">
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100 h-100" src="resources/img/product-3.jpg" alt="Image">
+                            <img class="w-100 h-100" src="/ping/resources/img/product-3.jpg" alt="Image">
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100 h-100" src="resources/img/product-4.jpg" alt="Image">
+                            <img class="w-100 h-100" src="/ping/resources/img/product-4.jpg" alt="Image">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
@@ -121,8 +113,8 @@
                     </a>
                 </div>
                 <div class="lobimg">
-                    <a class="likeimg" href=""><img src="resources/img/like.png" alt=""></a>
-                    <a class="buyimg" href=""><img src="resources/img/buy.png" alt=""></a>
+                    <a class="likeimg" href=""><img src="/ping/resources/img/like.png" alt=""></a>
+                    <a class="buyimg" href=""><img src="/ping/resources/img/buy.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -154,7 +146,7 @@
                                 <div class="bestbox">
                                     <a href="review.jsp">
                                         <p>베스트리뷰 ***님</p>
-                                        <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                        <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                     </a>
                                 </div>
                                 <div class="reviewbox-1">
@@ -162,13 +154,13 @@
                                     <div class="review-1">
                                         <a href="#">
                                             <p>***님의 리뷰</p>
-                                            <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                            <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                         </a>
                                     </div>
                                     <div class="review-2">
                                         <a href="#">
                                             <p>***님의 리뷰</p>
-                                            <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                            <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -177,19 +169,19 @@
                                 <div class="review-3">
                                     <a href="#">
                                         <p>***님의 리뷰</p>
-                                        <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                        <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                     </a>
                                 </div>
                                 <div class="review-4">
                                     <a href="#">
                                         <p>***님의 리뷰</p>
-                                        <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                        <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                     </a>
                                 </div>
                                 <div class="review-5">
                                     <a href="#">
                                         <p>***님의 리뷰</p>
-                                        <img class="bestimg" src="resources/img/jorden.png" alt="">
+                                        <img class="bestimg" src="/ping/resources/img/jorden.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -233,7 +225,7 @@
                     <div class="card product-item border-0">
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="resources/img/product-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="/ping/resources/img/product-1.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
@@ -252,7 +244,7 @@
                     <div class="card product-item border-0">
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="resources/img/product-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="/ping/resources/img/product-2.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
@@ -271,7 +263,7 @@
                     <div class="card product-item border-0">
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="resources/img/product-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="/ping/resources/img/product-3.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
@@ -290,7 +282,7 @@
                     <div class="card product-item border-0">
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="resources/img/product-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="/ping/resources/img/product-4.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
@@ -309,7 +301,7 @@
                     <div class="card product-item border-0">
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="resources/img/product-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="/ping/resources/img/product-5.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
@@ -331,10 +323,6 @@
     </div>
     <!-- Products End -->
 
-    <div id="footer">
-
-    </div>
-
 </body>
-
+<%@include file="../main/footer.jsp"%>
 </html>

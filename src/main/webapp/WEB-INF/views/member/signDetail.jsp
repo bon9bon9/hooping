@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- Favicon -->
-     <link href="resources/img/favicon.ico" rel="icon">
+     <link href="/ping/resources/img/favicon.ico" rel="icon">
 
      <!-- Google Web Fonts -->
      <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,36 +19,18 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
  
      <!-- Libraries Stylesheet -->
-     <link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
  
      <!-- Customized Bootstrap Stylesheet -->
-     <link href="resources/css/style.css" rel="stylesheet">
-     <link href="resources/css/signUp.css" rel="stylesheet">
+     <link href="/ping/resources/css/style.css" rel="stylesheet">
+     <link href="/ping/resources/css/signUp.css" rel="stylesheet">
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-     <script>
-         $(function(){
-             
-           $("#header").load("header.jsp");
- 
-           $("#footer").load("footer.jsp");
-          
-         });
-   	 </script>
-     
     <title>Document</title>
 
 </head>
 <body>
 
-    <header>
-    	
-        <div id="header">
-
-        </div>
-    </header>  
-    
     <section class="signUp-section">
 
         <div class="signUp-logo">
@@ -58,7 +40,7 @@
         <div class="contact-form">
 
             <div id="success"></div>
-            <form action="saveMember.do" method="post" id="contactForm">
+            <form action="saveMember.do" method="post" id="form-contact">
             	<input type="hidden" name="memberEmail" value= "${MemberVO.memberEmail }"/>
             	<input type="hidden" name="memberPwd" value= "${MemberVO.memberPwd }"/>
                 <div class="control-group">
@@ -94,11 +76,8 @@
         </div>
 
     </section>
-    <div id="footer">
-
-    </div> 
-    
 </body>
+<%@include file="../main/footer.jsp"%>
 <script>	
 	
 	$(function(){

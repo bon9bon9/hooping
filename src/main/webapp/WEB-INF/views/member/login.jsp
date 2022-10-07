@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Favicon -->
-<link href="img/favicon.ico" rel="icon">
+<link href="/ping/resources/img/favicon.ico" rel="icon">
 
 <!-- Google Web Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,25 +18,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link href="resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/ping/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 <!-- Customized Bootstrap Stylesheet -->
-<link href="resources/css/style.css" rel="stylesheet">
-<link href="resources/css/jyp.css" rel="stylesheet">
+<link href="/ping/resources/css/style.css" rel="stylesheet">
+<link href="/ping/resources/css/jyp.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- kakao login api -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-
-<script>
-	$(function() {
-
-		$("#header").load("header.jsp");
-
-		$("#footer").load("footer.jsp");
-
-	});
-</script>
 
 <title>Document</title>
 
@@ -54,7 +45,7 @@
 		<div class="contact-form">
 
 			<div id="success"></div>
-			<form name="sentMessage" id="contactForm" novalidate="novalidate">
+			<form action="/ping/member/idCheck.do" method="post"  name="sentMessage" id="contactForm" novalidate="novalidate">
 				<div class="control-group">
 					<div class="login-email">
 						<span class="login-email-text">이메일 주소</span><br />
@@ -85,17 +76,13 @@
 				<div class="login-api">
 					<img src="resources/img/kakaoLogo.png" class="login-api-logo"> <span class="login-api-text">카카오 로그인</span>
 				</div>
-
-
 			</form>
-
-
 		</div>
 
 	</section>
-	<div id="footer"></div>
 
 </body>
+<%@include file="../main/footer.jsp"%>
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
 	Kakao.init('8890a67c089173194979845f9389950d'); //발급받은 키 중 javascript키를 사용해준다.

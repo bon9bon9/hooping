@@ -16,11 +16,29 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping(value="{url}.do")
-	   public void memberConn(@PathVariable String url) {
-	      System.out.println("호출");
-	      // return "/user/"+url; 
-	   }
+	@RequestMapping("login.do")
+	public String login() {
+		
+		return "/member/login";
+	}
+	
+	@RequestMapping("idCheck.do")
+	public String idCheck() {
+		
+		return "redirect:/main.do";
+	}
+	
+	@RequestMapping("logout.do")
+	public String logout() {
+		
+		return "/redirect:/main.do";
+	}
+	
+	@RequestMapping("signUp.do")
+	public String signUp() {
+		
+		return "/member/signUp";
+	}
 	
 	@RequestMapping("signDetail.do")
 	public String signDetail(MemberVO vo, Model model) {
@@ -35,7 +53,7 @@ public class MemberController {
 		System.out.println("===saveMember===");
 		memberService.saveMember(vo);
 		
-		return "../../index";
+		return "redirect:/main.do";
 	}
 	
 }
